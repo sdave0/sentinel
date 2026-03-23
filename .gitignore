@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Environments
+.env
+.env.*
+
+# Python
+.venv
+.pytest_cache/
+.ruff_cache/
+*.log
+
+# Databases
+*.db
+*.sqlite3
+
+# Docs
+architecture.md

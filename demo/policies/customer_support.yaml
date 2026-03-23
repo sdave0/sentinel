@@ -1,0 +1,11 @@
+version: "1.0"
+rules:
+  - tool: process_refund
+    requires_prior_tool: lookup_order
+    hitl_required: true
+    condition: "amount > 200"
+    reason: "Refunds above $200 require human operator approval."
+    
+  - tool: send_confirmation_email
+    requires_prior_tool: lookup_customer
+    hitl_required: false
